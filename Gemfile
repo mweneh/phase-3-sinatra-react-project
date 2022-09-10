@@ -31,9 +31,11 @@ gem "rake", "~> 13.0"
 # Provides functionality to interact with a SQLite3 database
 gem "sqlite3", "~> 1.4"
 
+gem "rest-client", "~> 2.1"
 # Require all files in a folder
 gem "require_all", "~> 3.0"
 
+gem "faker", "~> 2.18"
 # These gems will only be used when we are running the application locally
 group :development do
   gem "pry", "~> 0.14.1"
