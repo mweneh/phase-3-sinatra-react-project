@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-
+ruby '2.7.4'
 # A DSL for quickly creating web applications
 # https://github.com/sinatra/sinatra
 gem "sinatra", "~> 2.1"
@@ -20,6 +20,7 @@ gem "rack-cors", "~> 1.1"
 # https://guides.rubyonrails.org/active_record_basics.html
 gem "activerecord", "~> 6.1"
 
+gem 'heroku', '~> 3.99', '>= 3.99.4'
 # Configures common Rake tasks for working with Active Record
 # https://github.com/sinatra-activerecord/sinatra-activerecord
 gem "sinatra-activerecord", "~> 2.0"
@@ -29,11 +30,13 @@ gem "sinatra-activerecord", "~> 2.0"
 gem "rake", "~> 13.0"
 
 # Provides functionality to interact with a SQLite3 database
-gem "sqlite3", "~> 1.4"
+# gem "sqlite3", "~> 1.4"
+gem 'pg', '~> 1.4', '>= 1.4.3'
 
 gem "rest-client", "~> 2.1"
 # Require all files in a folder
 gem "require_all", "~> 3.0"
+gem 'sinatra-contrib', '~> 2.2', '>= 2.2.2',require: false
 
 gem "faker", "~> 2.18"
 # These gems will only be used when we are running the application locally
