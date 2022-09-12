@@ -39,10 +39,10 @@ class ApplicationController < Sinatra::Base
     user.to_json(only:[:name,:id])
   end
 
-  delete '/ratings/:id' do
-    rating = Rating.find(params[:id])
-    rating.destroy
-    rating.to_json
+  delete '/comment/:id' do
+    comment = Review.find(params[:id])
+    comment.destroy
+    comment.to_json
   end
 
   delete '/users/:id' do
@@ -94,6 +94,6 @@ class ApplicationController < Sinatra::Base
       user.update(
         name: params[:name]
     )
-    rating.to_json
+    user.to_json
   end
 end
