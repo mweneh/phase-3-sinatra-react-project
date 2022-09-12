@@ -14,7 +14,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/users/all'  do
-    users = User.all.limit(10)
+    users = User.all
     users.to_json(only:[:name,:id])
   end
 
