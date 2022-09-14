@@ -1,4 +1,4 @@
-puts "🌱 Seeding spices..."
+puts "🌱 Seeding games..."
 
 20.times do
     User.create(name: Faker::Name.name)

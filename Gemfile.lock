@@ -45,7 +45,6 @@ GEM
     mustermann (2.0.2)
       ruby2_keywords (~> 0.0.1)
     netrc (0.11.0)
-    pg (1.4.3)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -99,6 +98,7 @@ GEM
       rack-protection (= 2.2.2)
       sinatra (= 2.2.2)
       tilt (~> 2.0)
+    sqlite3 (1.4.4)
     thin (1.8.1)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
@@ -119,7 +119,6 @@ DEPENDENCIES
   activerecord (~> 6.1)
   database_cleaner (~> 2.0)
   faker (~> 2.18)
-  pg (~> 1.4, >= 1.4.3)
   pry (~> 0.14.1)
   rack-contrib (~> 2.3)
   rack-cors (~> 1.1)
@@ -133,7 +132,11 @@ DEPENDENCIES
   sinatra (~> 2.1)
   sinatra-activerecord (~> 2.0)
   sinatra-contrib (~> 2.2, >= 2.2.2)
+  sqlite3 (~> 1.4)
   thin (~> 1.8)
+
+RUBY VERSION
+   ruby 2.7.4p191
 
 BUNDLED WITH
    2.2.23
